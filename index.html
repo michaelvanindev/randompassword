@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="password.css">
+</head>
+<body>
+    <main>
+			<div class="showcase-container">
+				<div class="showcase-content">
+					<h1>Random Password Generator</h1>
+					<div class="controls-container">
+						<div class="inputs">
+							<label for="num">Number of Characters:</label>
+							<input type="text" id="num"><br/>
+							<input type="checkbox" id="uppercase" name="uppercase" value="uppercase">
+							<label for="num">Uppercase</label><br/>
+							<input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+							<label for="lowercase"> Lowercase</label><br>
+							<input type="checkbox" id="numbers" name="numbers" value="numbers">
+							<label for="numbers"> Numbers</label><br>
+							<input type="checkbox" id="symbols" name="symbols" value="symbols">
+							<label for="symbols"> Symbols</label>
+						</div>
+						<div class="outputs">
+							<label for="password">Password:</label>
+							<input type="text" id="password" disabled><br/>
+							<input type="button" id="generate" value="Get Password">
+							<input type="button" id="clear" value="Clear">
+						</div>
+					</div>
+				</div>
+			</div>
+    </main>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   	<script src="password.js"></script>
+</body>
+</html>
